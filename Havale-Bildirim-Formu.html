@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gadayiff</title>
+    <!--Burası Style Dosyaları-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/Favicon.png">
+
+    <!--Burası Script Dosyaları-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+
+    <style>
+        @media only screen and (max-width:574px) {
+            /* XS */
+            #SearchText {
+                margin: 20px 0 0 0;
+            }
+            #SearchButton {
+                margin: 6px 0;
+            }
+        }
+        
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+        
+        main {
+            background-color: #F4F4F4;
+        }
+    </style>
+    <!--Burası WhatsApp ve Jivochat Destek-->
+    <script src="//code.jivosite.com/widget/YCeTB0zewF" async></script>
+    <script type="text/javascript">
+        (function() {
+            var options = {
+                whatsapp: "+905425401198",
+                call_to_action: "Merhaba, nasıl yardımcı olabilirim?",
+                position: "left",
+            };
+            var proto = document.location.protocol,
+                host = "getbutton.io",
+                url = proto + "//static." + host;
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = url + '/widget-send-button/js/init.js';
+            s.onload = function() {
+                WhWidgetSendButton.init(host, proto, options);
+            };
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+    <!--Burası DarkMode Özelleği Kullanımı-->
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+            const options = {
+                bottom: '76px', // default: '32px'
+                right: 'unset', // default: '32px'
+                left: '22px', // default: 'unset'
+                time: '1s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: '#fff', // default: '#fff'
+                buttonColorDark: '#100f2c', // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: false, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
+
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+</head>
+
+<body>
+    <!-----Burası Header Alanı----->
+    <header>
+        <figure class="figure bg-transparent w-100 mb-0">
+            <img src="images/top-banner.png" class="figure-img img-fluid mb-0" alt="Kargo Bedava Mesajı">
+        </figure>
+    </header>
+    <header class="sticky-top">
+        <nav class="navbar navbar-dark navbar-expand bg-secondary">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item mr-2"><a href="Giris-Yap.html" class="nav-link"><i class="fas fa-user mr-1 text-dark"></i>Giriş Yap</a></li>
+                <li class="nav-item mr-2"><a href="Uye-Yap.html" class="nav-link"><i class="fas fa-user-plus mr-1 text-dark"></i>Üye Ol</a></li>
+                <li class="nav-item"><a href="Alisveris-Sepeti.html" class="nav-link"><i class="fas fa-shopping-cart mr-1 text-dark"></i>Alışveriş Sepeti</a></li>
+            </ul>
+        </nav>
+        <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
+            <a href="index.html" class="navbar-brand ml-4"><img src="images/AnaLogo.png" alt=""></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#MyNavbar2"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse ml-4 ml-lg-0" id="MyNavbar2">
+                <ul class="navbar-nav mr-auto nav-tabs">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="Erkek-Ayakkabilari.html" class="nav-link">Men Shoes</a></li>
+                    <li class="nav-item"><a href="Cocuk-Ayakkabilari.html" class="nav-link">Women Shoes</a></li>
+                    <li class="nav-item"><a href="Cocuk-Ayakkabilari.html" class="nav-link">Cihld Shoes</a></li>
+                </ul>
+                <div class="form-inline">
+                    <input class="form-control mr-2" placeholder="Search" id="SearchText" type="text">
+                    <button type="button" class="btn btn-outline-success" id="SearchButton">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-----Burası Header Alanı----->
+
+
+
+    <!-----Burası Main Alanı----->
+    <main class="px-3 px-sm-0">
+        <div class="container my-4 border p-4 bg-white shadow">
+            <div class="row">
+                <div class="col-lg-6 mr-0">
+                    <h3 class="text-warning mb-0">Havale Bildirim Formu</h3>
+                    <p class="text-secondary">Tamamlanmış olan ödeme işleminizi bildirin.</p>
+                    <hr class="bg-info mb-4">
+                    <form action="#" method="GET" novalidate class="needs-validation">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="Addoon"><i class="far fa-user"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="First Name" required>
+                            <input type="text" class="form-control" placeholder="Last Name" required>
+                            <div class="valid-feedback"><i class="far fa-thumbs-up"></i></div>
+                            <div class="invalid-feedback"><i class="far fa-thumbs-down mr-1"></i>Lütfen bu alanı doldurun!</div>
+                        </div>
+                        <div class="input-group mt-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="far fa-paper-plane"></i></span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Email" required>
+                            <div class="input-group-append">
+                                <span class="input-group-text">@example.com</span>
+                            </div>
+                            <div class="valid-feedback"><i class="far fa-thumbs-up"></i></div>
+                            <div class="invalid-feedback"><i class="far fa-thumbs-down mr-1"></i>Lütfen bu alanı doldurun!</div>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="form-group col-sm-6">
+                                <label for="Email">Email:</label>
+                                <input type="email" class="form-control" placeholder="example@example.com" id="Email" required>
+                                <div class="valid-feedback"><i class="far fa-thumbs-up"></i></div>
+                                <div class="invalid-feedback"><i class="far fa-thumbs-down mr-1"></i>Lütfen bu alanı doldurun!</div>
+                                <small class="text-muted form-text">E-Posta adresiniz hiçbir kurum ya da kişiyle paylaşılmayıp işleme tabi tutulmayacaktır..</small>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="Password">Password:</label>
+                                <input type="password" class="form-control" placeholder="Enter Password" id="Password" required>
+                                <div class="valid-feedback"><i class="far fa-thumbs-up"></i></div>
+                                <div class="invalid-feedback"><i class="far fa-thumbs-down mr-1"></i>Lütfen bu alanı doldurun!</div>
+                                <small class="text-muted form-text">Gireceğiniz şifre 8 ila 16 karakter arasında olmalıdır..</small>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Comment">Address:</label>
+                            <textarea class="form-control" rows="6" placeholder="Enter Address" id="Comment" required></textarea>
+                            <div class="valid-feedback"><i class="far fa-thumbs-up"></i></div>
+                            <div class="invalid-feedback"><i class="far fa-thumbs-down mr-1"></i>Lütfen bu alanı doldurun!</div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="Country">Country:</label>
+                                <input type="address" class="form-control" placeholder="Enter Country" id="Country" required>
+                                <div class="valid-feedback"><i class="far fa-thumbs-up"></i></div>
+                                <div class="invalid-feedback"><i class="far fa-thumbs-down mr-1"></i>Lütfen bu alanı doldurun!</div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="City">City:</label>
+                                <select class="form-control" id="City" name="City" required>
+                                    <option value="">None</option>
+                                    <option value="Istanbul">Istanbul</option>
+                                    <option value="London">London</option>
+                                    <option value="Makkah">Makkah</option>
+                                    <option value="Medineh">Medineh</option>
+                                    <option value="Paris">Paris</option>
+                                    <option value="Erzurum">Erzurum</option>
+                                </select>
+                                <div class="valid-feedback"><i class="far fa-thumbs-up"></i></div>
+                                <div class="invalid-feedback"><i class="far fa-thumbs-down mr-1"></i>Lütfen bu alanı doldurun!</div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label for="Neighborhood">Neighborhood:</label>
+                                <select class="form-control" id="Neighborhood" name="Neighborhood" required>
+                                    <option value="">None</option>
+                                    <option value="Istanbul">Istanbul</option>
+                                    <option value="London">London</option>
+                                    <option value="Makkah">Makkah</option>
+                                    <option value="Medineh">Medineh</option>
+                                    <option value="Paris">Paris</option>
+                                    <option value="Erzurum">Erzurum</option>
+                                </select>
+                                <div class="valid-feedback"><i class="far fa-thumbs-up"></i></div>
+                                <div class="invalid-feedback"><i class="far fa-thumbs-down mr-1"></i>Lütfen bu alanı doldurun!</div>
+                            </div>
+                        </div>
+                        <div class="input-group mt-2 mb-4">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-outline-info">Search</button>
+                            </div>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4">
+                            <input type="checkbox" class="custom-control-input" id="CustomCheck" required>
+                            <label for="CustomCheck" class="custom-control-label text-muted">Şart ve koşulları okudum, kabul ediyorum..</label>
+                            <div class="valid-feedback"><i class="far fa-thumbs-up"></i></div>
+                            <div class="invalid-feedback"><i class="far fa-thumbs-down mr-1"></i>Lütfen bu alanı doldurun!</div>
+                        </div>
+                        <button type="submit" class="btn btn-outline-dark w-50 offset-3">Bildirim Gönder</button>
+                        <hr class="border-info">
+                        <button type="button" class="btn btn-outline-info mt-1" data-toggle="modal" data-target="#MyModal4" data-whatever="@kymrrobot">@kymrrobot</button>
+                        <button type="button" class="btn btn-outline-info mt-1" data-toggle="modal" data-target="#MyModal4" data-whatever="@a.aykac">@a.aykac</button>
+                        <button type="button" class="btn btn-outline-info mt-1" data-toggle="modal" data-target="#MyModal4" data-whatever="@mumin">@mumin</button>
+                        <button type="button" class="btn btn-outline-info mt-1" data-toggle="modal" data-target="#MyModal4" data-whatever="@melezprens">@melezprens</button>
+                        <script>
+                            (function() {
+                                'use strich';
+                                window.addEventListener('load', function() {
+                                    var forms = document.getElementsByClassName('needs-validation');
+                                    var validation = Array.prototype.filter.call(forms, function(form) {
+                                        form.addEventListener('submit', function(event) {
+                                            if (form.checkValidity() === false) {
+                                                event.preventDefault();
+                                                event.stopPropagation();
+                                            }
+                                            form.classList.add('was-validated');
+                                        }, false);
+                                    });
+                                }, false);
+                            })();
+                            $(document).ready(function() {
+                                $('#MyModal4').on('show.bs.modal', function(event) {
+                                    var button = $(event.relatedTarget);
+                                    var recipient = button.data('whatever');
+                                    var model = $(this);
+                                    model.find('.modal-title').text('Message Recipient: ' + recipient);
+                                    model.find('.modal-body #Addoon2').val(recipient);
+                                });
+                            });
+                        </script>
+                    </form>
+                    <div id="MyModal4" class="modal fade" role="dialog">
+                        <!--modal-lg, modal-sm-->
+                        <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <!--modal-dialog-centered-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal with JavaScript</h5>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="#">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="far fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control" id="Addoon2" placeholder="First Name" disabled>
+                                            <input type="text" class="form-control" placeholder="Last Name">
+                                        </div>
+                                        <div class="input-group mt-4">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="far fa-paper-plane"></i></span>
+                                            </div>
+                                            <input type="email" class="form-control" placeholder="Email">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">@example.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="input-group mt-4">
+                                            <div class="input-group-prepend h-25">
+                                                <div class="input-group-text"><i class="fas fa-text-height"></i></div>
+                                            </div>
+                                            <textarea class="form-control" rows="5" placeholder="Comment"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-success" id="Save4" onClick="document.getElementById('Save4').disabled = true">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ml-0 mt-5 mt-lg-0">
+                    <h3 class="text-warning mb-0">İşleyiş</h3>
+                    <p class="text-secondary">Havale / EFT işlemlerinin kontrolü.</p>
+                    <hr class="bg-info mb-4">
+                    <div class="card border-none bg-transparent mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title text-info"><i class="fas fa-university mr-2"></i>Havale / EFT işlemi</h6>
+                            <span class="card-text text-secondary">Müşteri tarafından öncelikle, banka hesaplarımız sayfasında bulunan herhangi bir hesaba ödeme işlemini gerçekleştirilir.</span>
+                        </div>
+                    </div>
+                    <div class="card border-none bg-transparent mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title text-info"><i class="fas fa-envelope-open-text mr-2"></i>Bildirim İşlemi</h6>
+                            <span class="card-text text-secondary">Ödeme işleminizi tamamladıktan sonra "Havale Bildirim Formu" sayfasından müşteri yapmış olduğu ödeme için bildirim formunu doldurarak online olarak gönderir.</span>
+                        </div>
+                    </div>
+                    <div class="card border-none bg-transparent mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title  text-info"><i class="fas fa-cogs mr-2"></i>Kontroller</h6>
+                            <span class="card-text text-secondary">"Havale Bildirim Formu"'nuz tarafımıza ulaştığı anda ilgili departman tarafından yapmış olduğunuz havale / EFT işlemi ilgili banka üzerinden kontrol edilir.</span>
+                        </div>
+                    </div>
+                    <div class="card border-none bg-transparent mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title text-info"><i class="fas fa-users mr-2"></i>Onay / Red</h6>
+                            <span class="card-text text-secondary">Havale bildirimi geçerli ise yani hesaba ödeme geçmiş ise, yönetici ilgili ödeme onayını vererek, siparişi teslimat birimine iletir.</span>
+                        </div>
+                    </div>
+                    <div class="card border-none bg-transparent mb-3">
+                        <div class="card-body">
+                            <h6 class="card-title text-info"><i class="fas fa-clock mr-2"></i>Sipariş Hazırlama ve Teslimat</h6>
+                            <span class="card-text text-secondary">Yönetici ödeme onayından sonra, sayfamız üzerinden vermiş olduğunuz sipariş en kısa sürede hazırlanarak kargoya teslim edilir ve tarafınıza ulaştırılır.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-----Burası Main Alanı----->
+
+
+
+    <!-----Burası Footer Alanı----->
+    <footer class="border-top pt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6">
+                    <h6>Kurumsal</h6>
+                    <hr class="bg-info">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item py-2 border-top-0"><a href="Hakkimizda.html" class="text-dark">Hakkımızda</a></li>
+                        <li class="list-group-item py-2"><a href="Banka-Hesaplarimiz.html" class="text-dark">Banka Hesaplarımız</a></li>
+                        <li class="list-group-item py-2"><a href="Havale-Bildirim-Formu.html" class="text-dark">Havale Bildirim Formu</a></li>
+                        <li class="list-group-item py-2"><a href="Bayilerimiz.html" class="text-dark">Bayilerimiz</a></li>
+                        <li class="list-group-item py-2"><a href="Bayilik-Basvuru-Formu.html" class="text-dark">Bayilik Başvuru Formu</a></li>
+                        <li class="list-group-item py-2"><a href="Kargom-Nerede.html" class="text-dark">Kargom Nerede?</a></li>
+                        <li class="list-group-item py-2"><a href="Iletisim.html" class="text-dark">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-4 mt-sm-0">
+                    <h6>Üyelik & Hizmetler</h6>
+                    <hr class="bg-warning">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item py-2 border-top-0"><a href="Hesabim.html" class="text-dark">Hesabım</a></li>
+                        <li class="list-group-item py-2"><a href="Cikis.html" class="text-dark">Çıkış</a></li>
+                        <li class="list-group-item py-2"><a href="SSS.html" class="text-dark">Sık Sorulan Sorular</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-4 mt-lg-0">
+                    <h6>Sözleşmeler</h6>
+                    <hr class="bg-info">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item py-2 border-top-0"><a href="Uyelik-Sozlesmesi.html" class="text-dark">Üyelik Sozleşmesi</a></li>
+                        <li class="list-group-item py-2"><a href="Bayilik-Sozlesmesi.html" class="text-dark">Bayilik Sozleşmesi</a></li>
+                        <li class="list-group-item py-2"><a href="Kullanim-Kosullari.html" class="text-dark">Kullanım Koşulları</a></li>
+                        <li class="list-group-item py-2"><a href="Gizlilik-ve-Guvenlik.html" class="text-dark">Gizlik ve Güvenlik</a></li>
+                        <li class="list-group-item py-2"><a href="Mesafi-Satıs-Sozlesmesi.html" class="text-dark">Mesafeli Satış Sozleşmesi</a></li>
+                        <li class="list-group-item py-2"><a href="Teslimat.html" class="text-dark">Teslimat</a></li>
+                        <li class="list-group-item py-2"><a href="Iptal-Iade-Degisim.html" class="text-dark">İptal & İade & Değişim</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mt-4 mt-lg-0">
+                    <h6>Bizi Takip Edin</h6>
+                    <hr class="bg-warning">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item py-2 border-top-0"><a href="https://facebook.com" target="new" class="text-dark"><i class="fab fa-facebook text-info mr-1"></i>Facebook</a></li>
+                        <li class="list-group-item py-2"><a href="https://twitter.com" target="new" class="text-dark"><i class="fab fa-twitter text-info mr-1"></i>Twitter</a></li>
+                        <li class="list-group-item py-2"><a href="https://tr.linkedin.com" target="new" class="text-dark"><i class="fab fa-linkedin-in text-info mr-1"></i>LinkedIn</a></li>
+                        <li class="list-group-item py-2"><a href="https://plus.google" target="new" class="text-dark"><i class="fab fa-google-plus text-info mr-1"></i>Google+</a></li>
+                        <li class="list-group-item py-2"><a href="https://instagram.com" target="new" class="text-dark"><i class="text-info mr-1 fab fa-instagram"></i>Instagram</a></li>
+                        <li class="list-group-item py-2"><a href="https://pinterest.com" target="new" class="text-dark"><i class="fab fa-pinterest text-info mr-1"></i>Pinterest</a></li>
+                        <li class="list-group-item py-2"><a href="https://youtube.com" target="new" class="text-dark"><i class="fab fa-youtube text-info mr-1"></i>Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-1">Copyright © 2009 - 2018 <a href="index.html" class="text-muted mr-1">Gadayiff.com</a><em>Her Hakkı Saklıdır.</em></div>
+            <div class="text-muted text-center my-2">
+                <i class="fab fa-cc-visa fa-3x mr-1"></i><i class="fab fa-cc-stripe mr-1 fa-3x"></i><i class="fab fa-cc-paypal mr-1 fa-3x"></i><i class="fab fa-cc-mastercard mr-1 fa-3x"></i><i class="fab fa-cc-jcb mr-1 fa-3x"></i><i class="fab fa-cc-apple-pay mr-1 fa-3x"></i>
+                <i class="fab fa-cc-discover mr-1 fa-3x"></i><i class="fab fa-cc-amex mr-1 fa-3x"></i><i class="fab fa-cc-amazon-pay mr-1 fa-3x"></i><i class="fab fa-expeditedssl mr-1 fa-3x"></i>
+            </div>
+        </div>
+    </footer>
+    <!-----Burası Footer Alanı----->
+</body>
+
+</html>

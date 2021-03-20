@@ -1,0 +1,76 @@
+/*@media only screen and (min-width:1200px){  XL 
+	#whatever{
+	}
+}
+@media only screen and (min-width:992px) and (max-width:1199px){  L 
+	#whatever{
+	}
+}
+@media only screen and (min-width:768px) and (max-width:991px){  M 
+	#whatever{
+	}
+}
+@media only screen and (min-width:576px) and (max-width:767px){  S 
+	#whatever{
+	}
+}
+@media only screen and (max-width:574px){  XS 
+	#whatever{
+	}
+}*/
+
+
+
+/*****Burası Alışveriş Sepeti*****/
+@media only screen and (min-width:1200px){ 
+	#SiparisOzeti, #ToplamUrun, #OdenecekTutar, #OdenecekPara, #UrunlerToplami, #UToplamFiyat, #IndirimlerToplami, #IToplamFiyat, #KargoToplami, #KargoToplamiFiyat{
+        text-align: right;
+	}
+    #AlisverisiTamamla{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:992px) and (max-width:1199px){   
+	#SiparisOzeti, #ToplamUrun, #OdenecekTutar, #OdenecekPara, #UrunlerToplami, #UToplamFiyat, #IndirimlerToplami, #IToplamFiyat, #KargoToplami, #KargoToplamiFiyat{
+        text-align: right;
+	}
+    #AlisverisiTamamla{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:991px){  
+	#SiparisOzeti, #ToplamUrun, #OdenecekTutar, #OdenecekPara, #UrunlerToplami, #UToplamFiyat, #IndirimlerToplami, #IToplamFiyat, #KargoToplami, #KargoToplamiFiyat{
+        text-align: left;
+	}
+    #AlisverisiTamamla{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:576px) and (max-width:767px){  
+	#SiparisOzeti, #ToplamUrun, #OdenecekTutar, #OdenecekPara, #UrunlerToplami, #UToplamFiyat, #IndirimlerToplami, #IToplamFiyat, #KargoToplami, #KargoToplamiFiyat{
+        text-align: left;
+	}
+    #AlisverisiTamamla{
+        width: 50%;
+    }
+}
+@media only screen and (max-width:574px){ 
+	#SiparisOzeti, #ToplamUrun, #OdenecekTutar, #OdenecekPara, #UrunlerToplami, #UToplamFiyat, #IndirimlerToplami, #IToplamFiyat, #KargoToplami, #KargoToplamiFiyat{
+        text-align: left;
+	}
+    #AlisverisiTamamla{
+        width: 50%;
+    }
+}
+/*****Burası Alışveriş Sepeti*****/
+
+
+
+
+
+
+
+
+
+
+
